@@ -1,0 +1,26 @@
+<% include partials/header.ejs %>
+
+    	<div class="container">
+    	    <p style="margin-bottom: 0; width: 50%; padding: auto">© Copyright Wietse Corporations 2018</p>
+    		<div class="jumbotron">
+    		    <h1>DOG FACT</h1>
+				<h2><%= fact %></h2>
+				
+
+			</div>
+                <a href="/dog/jpg">
+					<button class="btn btn-primary btn-lg"><i class="fas fa-paw"></i> New Fact picture</button>	
+				</a>
+				<a href="/dog/gif">
+					<button class="btn btn-primary btn-lg"><i class="fas fa-paw"></i> New Fact gif</button>	
+				</a>
+			<div id="wietse2">
+					<img id="wietse" src="<%= picture %>" alt="Cute cat">
+			</div>
+		</div>
+
+    </body>
+    <footer>
+  <!-- <p style="color:#eee;font-size:30px;padding-left:20px">Love you baby <i class="fas fa-heart"></i></p> -->
+</footer>
+</html>
