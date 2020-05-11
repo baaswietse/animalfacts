@@ -40,8 +40,9 @@ app.get("/cat/gif", function(req,res){
 
 app.get("/dog/jpg", function(req,res){
     randomPuppy().then(url => {
-        var dogPicture = url
-        res.render("indexDog.ejs", {fact: dogFacts.random(), picture: dogPicture})
+        var dogPicture = url.split('http')[1]
+        var link = https + dogPicture
+        res.render("indexDog.ejs", {fact: dogFacts.random(), picture: link})
     })
 })
 
