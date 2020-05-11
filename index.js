@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 
 app.get("/", function(req,res){
-    res.redirect("/cat/jpg")
+    res.redirect("/dog/jpg")
 })
 
 app.get("/cat/jpg", function(req,res){
